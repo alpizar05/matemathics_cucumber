@@ -16,7 +16,7 @@ Feature: Cucumber Mathematics
   Scenario: Attempting to eat more carrots than available
     Given I have 10 carrots
     When I try to eat 12 carrots
-    Then I should get an error "Not enough carrots available"
+    Then I should get an error "Not enough carrots available. You have 10 but tried to eat 12"
     And I should still have 10 carrots
 
   @regression @smoke @salad
