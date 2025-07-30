@@ -1,0 +1,40 @@
+{
+  "name": "matemathics_cucumber",
+  "version": "1.0.0",
+  "description": "A simple mathematics test automation solution using Node.js and Cucumber.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:verbose": "cucumber-js --format pretty",
+    "test:cucumber": "cucumber-js --tags @cucumber",
+    "test:carrot": "cucumber-js --tags @carrot",
+    "test:salad": "cucumber-js --tags @salad",
+    "test:regression": "cucumber-js --tags @regression",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:edge-case": "cucumber-js --tags @edge-case",
+    "test:allure": "cucumber-js && allure generate allure-results -o allure-report",
+    "allure:serve": "allure serve allure-results",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:clean": "rimraf allure-results allure-report",
+    "allure:clean-results": "rimraf allure-results",
+    "allure:clean-report": "rimraf allure-report",
+    "clean": "npm run allure:clean && rimraf reports",
+    "clean:all": "npm run clean && rimraf node_modules package-lock.json"
+  },
+  "keywords": [
+    "cucumber",
+    "bdd",
+    "testing",
+    "mathematics",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.1.0",
+    "allure-cucumberjs": "^3.3.2",
+    "chai": "^5.2.1",
+    "rimraf": "^5.0.10"
+  }
+}
