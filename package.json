@@ -29,7 +29,7 @@
     "mathematics",
     "automation"
   ],
-  "author": "Your Name",
+  "author": "Alvaro Alpizar",
   "license": "MIT",
   "devDependencies": {
     "@cucumber/cucumber": "^12.1.0",

@@ -42,14 +42,7 @@ class Vegetable {
   // Try to eat vegetables (catches errors internally)
   tryToEat(count) {
     try {
-      if (this.count >= count) {
-        this.count -= count;
-        this.lastError = null;
-        return true;
-      } else {
-        this.lastError = `Not enough ${this.name}s available`;
-        throw new Error(this.lastError);
-      }
+      return this.eat(count);
     } catch (error) {
       this.lastError = error.message;
       return false;
