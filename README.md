@@ -18,13 +18,13 @@ This project demonstrates basic mathematics operations using cucumber scenarios:
 ## Setup Instructions
 
 1. **Clone the repository** (if not already done):
-   ```bash
-   git clone git@github.com:alpizar05/mathematics_cucumber.git
-   cd mathematics_cucumber
+   ```
+   clone github repository https://github.com/alpizar05/mathematics_cucumber.git
    ```
 
 2. **Install dependencies**:
    ```bash
+   cd mathematics_cucumber
    npm install
    ```
 
